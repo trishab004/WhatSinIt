@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhatSinIt — Know what you eat</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #F0EDE6;
+      --surface: #FFFFFF;
+      --border: #E0DDD6;
+      --border-soft: #EDEBE4;
+      --text: #1A1A18;
+      --muted: #73726C;
+      --hint: #A8A69F;
+      --accent: #1D9E75;
+      --accent-bg: #E1F5EE;
+      --accent-dark: #0F6E56;
+      --radius: 16px;
+      --radius-sm: 10px;
+      --good: #3B6D11; --good-bg: #EAF3DE; --good-border: #C0DD97;
+      --caution: #854F0B; --caution-bg: #FAEEDA; --caution-border: #FAC775;
+      --avoid: #A32D2D; --avoid-bg: #FCEBEB; --avoid-border: #F7C1C1;
+    }
+
+    body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; font-size: 14px; }
+
+    /* ── Header ── */
+    header {
+      background: #111110;
+      padding: 0 2rem;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      position: sticky; top: 0; z-index: 10;
+    }
+    .logo-chip {
+      display: flex; align-items: center; gap: 8px;
+      background: rgba(29,158,117,0.18);
+      border: 1px solid rgba(29,158,117,0.35);
+      border-radius: 10px;
+      padding: 5px 10px 5px 8px;
+    }
+    .logo-icon { font-size: 18px; line-height: 1; }
+    .logo-name { font-size: 14px; font-weight: 700; color: #fff; letter-spacing: -0.3px; }
+    .logo-tag { font-size: 12px; color: #666461; margin-left: 4px; }
+
+    .container { max-width: 840px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+
+    /* ── Hero ── */
+    .hero { text-align: center; margin-bottom: 2.25rem; }
+
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 12px; font-weight: 600;
+      color: var(--accent-dark);
+      background: var(--accent-bg);
+      border: 1.5px solid var(--good-border);
+      border-radius: 20px;
+      padding: 5px 14px;
+      margin-bottom: 16px;
+      letter-spacing: 0.2px;
+    }
+
+    .hero h1 {
+      font-size: 36px; font-weight: 700;
+      letter-spacing: -1px; margin-bottom: 12px;
+      line-height: 1.15;
+    }
+    .hero h1 .accent { color: var(--accent); position: relative; }
+    .hero h1 .accent::after {
+      content: '';
+      position: absolute; bottom: 2px; left: 0; right: 0;
+      height: 3px; background: var(--accent);
+      border-radius: 2px; opacity: 0.3;
+    }
+    .hero p { font-size: 16px; color: var(--muted); max-width: 460px; margin: 0 auto; line-height: 1.65; }
+
+    .hero-pills { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 18px; }
+    .pill {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 12px; font-weight: 500; padding: 6px 13px;
+      border-radius: 20px;
+      border: 1.5px solid var(--border);
+      color: var(--muted);
+      background: var(--surface);
+      transition: border-color .15s, color .15s;
+    }
+    .pill:hover { border-color: var(--accent); color: var(--accent-dark); }
+    .pill-dot { width: 7px; height: 7px; border-radius: 50%; }
+
+    /* ── Stats strip ── */
+    .stats-strip {
+      display: flex; gap: 1px;
+      background: var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 1.25rem;
+    }
+    .stat {
+      flex: 1; background: var(--surface);
+      padding: .875rem 1rem; text-align: center;
+    }
+    .stat-num { font-size: 20px; font-weight: 700; color: var(--accent); }
+    .stat-label { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+    /* ── Input card ── */
+    .input-card {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.04);
+    }
+
+    .tab-row {
+      display: flex;
+      border-bottom: 1.5px solid var(--border-soft);
+      background: #F8F7F4;
+      padding: 0 .5rem;
+      gap: 4px;
+    }
+    .tab {
+      font-size: 13px; font-weight: 600;
+      padding: 14px 18px;
+      border: none; background: none;
+      color: var(--muted); cursor: pointer;
+      border-bottom: 2.5px solid transparent;
+      margin-bottom: -1.5px;
+      display: flex; align-items: center; gap: 7px;
+      transition: color .15s; border-radius: 8px 8px 0 0;
+    }
+    .tab.active { color: var(--accent-dark); border-bottom-color: var(--accent); }
+    .tab:hover:not(.active) { color: var(--text); background: rgba(0,0,0,0.03); }
+
+    .input-body { padding: 1.5rem; }
+
+    textarea {
+      width: 100%; min-height: 110px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 1rem 1.1rem;
+      font-size: 14px; font-family: inherit;
+      resize: vertical; outline: none;
+      color: var(--text); background: #FAFAF8;
+      line-height: 1.65; transition: border-color .2s, box-shadow .2s;
+    }
+    textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(29,158,117,0.12); background: #fff; }
+
+    .upload-area {
+      border: 2px dashed var(--border);
+      border-radius: var(--radius-sm);
+      padding: 3rem 2rem; text-align: center;
+      cursor: pointer;
+      transition: border-color .2s, background .2s;
+      background: #FAFAF8;
+    }
+    .upload-area:hover { border-color: var(--accent); background: var(--accent-bg); }
+    .upload-area input { display: none; }
+    .upload-emoji { font-size: 40px; margin-bottom: 12px; display: block; }
+    .upload-title { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+    .upload-sub { font-size: 12px; color: var(--hint); }
+    .upload-filename { color: var(--accent); font-weight: 600; margin-top: 8px; font-size: 13px; }
+
+    .analyze-btn {
+      margin-top: 1.25rem; width: 100%; padding: 15px;
+      background: var(--accent);
+      color: white;
+      border: none; border-radius: var(--radius-sm);
+      font-size: 15px; font-weight: 700;
+      cursor: pointer; transition: background .15s, transform .1s;
+      letter-spacing: 0.2px;
+    }
+    .analyze-btn:hover { background: var(--accent-dark); transform: translateY(-1px); }
+    .analyze-btn:active { transform: translateY(0); }
+    .analyze-btn:disabled { opacity: .5; cursor: not-allowed; transform: none; }
+
+    #text-panel { display: block; }
+    #image-panel { display: none; }
+
+    /* ── Loading ── */
+    #loading { display: none; text-align: center; padding: 4rem 0; }
+    .loading-jar { font-size: 48px; animation: wobble 1s ease-in-out infinite; display: block; margin-bottom: 16px; }
+    @keyframes wobble { 0%,100%{transform:rotate(-5deg)} 50%{transform:rotate(5deg)} }
+    .loading-text { font-size: 15px; color: var(--muted); font-weight: 500; }
+    .loading-dots { display: inline-flex; gap: 5px; margin-left: 8px; }
+    .loading-dots span { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); animation: blink 1.2s infinite; }
+    .loading-dots span:nth-child(2) { animation-delay: .2s; }
+    .loading-dots span:nth-child(3) { animation-delay: .4s; }
+    @keyframes blink { 0%,80%,100%{opacity:.2} 40%{opacity:1} }
+
+    /* ── Results ── */
+    #results { display: none; }
+
+    .result-topbar {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.25rem;
+      display: flex; align-items: center; gap: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+    .result-icon { font-size: 36px; }
+    .result-info { flex: 1; }
+    .result-label { font-size: 11px; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); font-weight: 600; margin-bottom: 3px; }
+    .result-title { font-size: 18px; font-weight: 700; }
+
+    .overall-badge {
+      display: inline-flex; align-items: center; gap: 7px;
+      font-size: 13px; padding: 7px 16px;
+      border-radius: 20px; font-weight: 700;
+      border: 1.5px solid;
+    }
+    .overall-badge.good { background: var(--good-bg); color: var(--good); border-color: var(--good-border); }
+    .overall-badge.caution { background: var(--caution-bg); color: var(--caution); border-color: var(--caution-border); }
+    .overall-badge.avoid { background: var(--avoid-bg); color: var(--avoid); border-color: var(--avoid-border); }
+
+    /* ── Main layout ── */
+    .main-layout { display: grid; grid-template-columns: 195px 1fr; gap: 1.25rem; margin-bottom: 1.25rem; align-items: start; }
+
+    .jar-section {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1rem;
+      display: flex; flex-direction: column; align-items: center; gap: 14px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+    .jar-title { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+    #jar-svg { width: 140px; }
+
+    .legend { width: 100%; }
+    .legend-row { display: flex; align-items: center; gap: 8px; margin-bottom: 7px; font-size: 12px; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 3px; flex-shrink: 0; }
+    .legend-name { font-weight: 500; flex: 1; font-size: 11px; }
+    .legend-pct { color: var(--muted); font-size: 11px; font-weight: 600; }
+
+    /* ── Spoon card ── */
+    .spoon-card {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+    .card-header {
+      padding: 1rem 1.25rem;
+      border-bottom: 1.5px solid var(--border-soft);
+      background: linear-gradient(to right, #F8F7F4, #fff);
+      display: flex; align-items: center; gap: 8px;
+    }
+    .card-header-title { font-size: 13px; font-weight: 700; }
+    .card-header-sub { font-size: 11px; color: var(--muted); margin-left: auto; background: var(--bg); padding: 3px 8px; border-radius: 20px; border: 1px solid var(--border); }
+    .card-body { padding: .25rem 1.25rem; }
+
+    .spoon-row { display: flex; align-items: flex-start; gap: 10px; padding: 11px 0; border-bottom: 1px solid var(--border-soft); font-size: 13px; }
+    .spoon-row:last-child { border-bottom: none; }
+    .safety-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 4px; }
+    .spoon-name { font-weight: 600; min-width: 128px; line-height: 1.4; font-size: 12px; }
+    .spoon-right { flex: 1; }
+    .spoon-icons { font-size: 14px; line-height: 1; margin-bottom: 4px; letter-spacing: 1px; }
+    .spoon-note { font-size: 11px; color: var(--muted); line-height: 1.5; }
+
+    /* ── Verdict grid ── */
+    .verdict-section { margin-bottom: 1.25rem; }
+    .section-heading {
+      font-size: 12px; text-transform: uppercase; letter-spacing: .07em;
+      color: var(--muted); font-weight: 700; margin-bottom: 10px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .section-heading::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+    .verdict-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 10px; }
+
+    .verdict-card {
+      border-radius: 12px; padding: 1rem;
+      border: 1.5px solid var(--border); background: var(--surface);
+      transition: transform .15s;
+    }
+    .verdict-card:hover { transform: translateY(-2px); }
+    .verdict-card.avoid { border-color: var(--avoid-border); background: var(--avoid-bg); }
+    .verdict-card.caution { border-color: var(--caution-border); background: var(--caution-bg); }
+    .verdict-card.good { border-color: var(--good-border); background: var(--good-bg); }
+
+    .verdict-emoji { font-size: 22px; margin-bottom: 8px; display: block; }
+    .verdict-who { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 5px; }
+    .verdict-card.good .verdict-who { color: var(--good); }
+    .verdict-card.caution .verdict-who { color: var(--caution); }
+    .verdict-card.avoid .verdict-who { color: var(--avoid); }
+
+    .verdict-pill {
+      display: inline-block; font-size: 11px;
+      padding: 3px 9px; border-radius: 20px;
+      font-weight: 700; margin-bottom: 7px;
+    }
+    .verdict-card.good .verdict-pill { background: #fff; color: var(--good); border: 1.5px solid var(--good-border); }
+    .verdict-card.caution .verdict-pill { background: #fff; color: var(--caution); border: 1.5px solid var(--caution-border); }
+    .verdict-card.avoid .verdict-pill { background: #fff; color: var(--avoid); border: 1.5px solid var(--avoid-border); }
+
+    .verdict-reasons { font-size: 11px; color: var(--muted); line-height: 1.6; }
+    .verdict-card.avoid .verdict-reasons { color: #7A2020; }
+    .verdict-card.caution .verdict-reasons { color: #6B3F09; }
+
+    /* ── Summary ── */
+    .summary-card {
+      background: var(--surface);
+      border: 1.5px solid var(--good-border);
+      border-left: 4px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 1.1rem 1.25rem;
+      margin-bottom: 1.25rem;
+      display: flex; gap: 12px; align-items: flex-start;
+      box-shadow: 0 2px 12px rgba(29,158,117,0.08);
+    }
+    .summary-emoji { font-size: 24px; flex-shrink: 0; }
+    .summary-text { font-size: 14px; line-height: 1.75; color: var(--muted); }
+    .summary-text strong { color: var(--text); font-weight: 700; }
+
+    /* ── Unmatched ── */
+    .unmatched-box {
+      font-size: 12px; color: var(--hint);
+      padding: .75rem 1rem;
+      border: 1.5px dashed var(--border);
+      border-radius: var(--radius-sm);
+      margin-bottom: 1.25rem;
+      background: var(--surface);
+    }
+
+    /* ── Reset ── */
+    .reset-btn {
+      display: inline-flex; align-items: center; gap: 7px;
+      font-size: 13px; font-weight: 600; color: var(--muted);
+      background: var(--surface); border: 1.5px solid var(--border);
+      border-radius: 20px; padding: 8px 18px;
+      cursor: pointer; transition: all .15s;
+    }
+    .reset-btn:hover { color: var(--accent-dark); border-color: var(--accent); background: var(--accent-bg); }
+
+    @media (max-width: 580px) {
+      .main-layout { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 26px; }
+      .stats-strip { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-chip">
+    <span class="logo-icon">🧪</span>
+    <span class="logo-name">WhatSinIt</span>
+  </div>
+  <span class="logo-tag">Know what you're actually eating</span>
+</header>
+
+<div class="container">
+
+  <div class="hero" id="hero-section">
+    <div class="hero-eyebrow">🇮🇳 Built for Indian packaged foods</div>
+    <h1>What's really <span class="accent">inside</span> your food?</h1>
+    <p>Paste an ingredients list or upload a label photo — get a plain-language breakdown instantly.</p>
+    <div class="hero-pills">
+      <span class="pill"><span class="pill-dot" style="background:#85B7EB"></span>Infant safe?</span>
+      <span class="pill"><span class="pill-dot" style="background:#ED93B1"></span>Pregnancy</span>
+      <span class="pill"><span class="pill-dot" style="background:#5DCAA5"></span>Diabetic friendly?</span>
+      <span class="pill"><span class="pill-dot" style="background:#F0997B"></span>Blood pressure</span>
+      <span class="pill"><span class="pill-dot" style="background:#97C459"></span>Fitness</span>
+      <span class="pill"><span class="pill-dot" style="background:#AFA9EC"></span>Elderly</span>
+    </div>
+  </div>
+
+  <div class="stats-strip" id="stats-strip">
+    <div class="stat"><div class="stat-num">66+</div><div class="stat-label">Ingredients tracked</div></div>
+    <div class="stat"><div class="stat-num">7</div><div class="stat-label">Consumer profiles</div></div>
+    <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Free to use</div></div>
+    <div class="stat"><div class="stat-num">FSSAI</div><div class="stat-label">Aligned standards</div></div>
+  </div>
+
+  <div class="input-card" id="input-section">
+    <div class="tab-row">
+      <button class="tab active" id="tab-text" onclick="switchTab('text')">✏️ Type ingredients</button>
+      <button class="tab" id="tab-image" onclick="switchTab('image')">📷 Upload label photo</button>
+    </div>
+    <div class="input-body">
+      <div id="text-panel">
+        <textarea id="ingredients-text" placeholder="Paste or type ingredients list e.g. Wheat Flour, Sugar, Palm Oil, Salt, Emulsifier (471)..."></textarea>
+      </div>
+      <div id="image-panel">
+        <div class="upload-area" onclick="document.getElementById('file-picker').click()">
+          <input type="file" id="file-picker" accept="image/*" onchange="handleFile(this)" />
+          <span class="upload-emoji">📸</span>
+          <div class="upload-title">Click to upload a label photo</div>
+          <div class="upload-sub">JPG, PNG supported — Gemini reads the text for you</div>
+          <div class="upload-filename" id="filename-display"></div>
+        </div>
+      </div>
+      <button class="analyze-btn" id="analyze-btn" onclick="analyze()">🔍 Analyze ingredients</button>
+    </div>
+  </div>
+
+  <div id="loading">
+    <span class="loading-jar">🫙</span>
+    <div class="loading-text">Reading the label<span class="loading-dots"><span></span><span></span><span></span></span></div>
+  </div>
+
+  <div id="results">
+
+    <div class="result-topbar">
+      <span class="result-icon" id="result-icon">🫙</span>
+      <div class="result-info">
+        <div class="result-label">Ingredient analysis complete</div>
+        <div class="result-title">Here's what's inside</div>
+      </div>
+      <div id="overall-badge" class="overall-badge"></div>
+    </div>
+
+    <div class="main-layout">
+      <div class="jar-section">
+        <div class="jar-title">🫙 Inside the jar</div>
+        <svg id="jar-svg" viewBox="0 0 160 220" xmlns="http://www.w3.org/2000/svg">
+          <defs><clipPath id="jc"><path d="M18,55 L12,188 Q12,202 80,202 Q148,202 148,188 L142,55 Z"/></clipPath></defs>
+          <g id="jar-layers"></g>
+          <rect x="28" y="28" width="104" height="20" rx="5" fill="#C8C5BC"/>
+          <rect x="34" y="32" width="92" height="12" rx="3" fill="#DDD9D1"/>
+          <path d="M18,55 L12,188 Q12,202 80,202 Q148,202 148,188 L142,55 Z" fill="none" stroke="#C8C5BC" stroke-width="1.5"/>
+          <rect x="24" y="50" width="112" height="8" fill="#DDD9D1" opacity=".5"/>
+        </svg>
+        <div class="legend" id="jar-legend"></div>
+      </div>
+
+      <div class="spoon-card">
+        <div class="card-header">
+          <span>🥄</span>
+          <span class="card-header-title">Per 100g, in plain language</span>
+          <span class="card-header-sub">by weight ↓</span>
+        </div>
+        <div class="card-body" id="spoon-breakdown"></div>
+      </div>
+    </div>
+
+    <div class="verdict-section">
+      <div class="section-heading">👥 Who should be careful</div>
+      <div class="verdict-grid" id="verdict-grid"></div>
+    </div>
+
+    <div class="summary-card">
+      <span class="summary-emoji">💡</span>
+      <div class="summary-text" id="summary-box"></div>
+    </div>
+
+    <div class="unmatched-box" id="unmatched-box" style="display:none">
+      ⚠️ <span id="unmatched-text"></span>
+    </div>
+
+    <button class="reset-btn" onclick="reset()">← Analyze another product</button>
+  </div>
+</div>
+
+<script>
+  let activeTab = 'text', selectedFile = null;
+
+  const PROFILE_LABELS = {
+    adults:'Healthy adults', diabetics:'Diabetics', infants:'Infants (<2 yrs)',
+    pregnant:'Pregnant women', hypertension:'High blood pressure', elderly:'Elderly', fitness:'Gym / fitness'
+  };
+  const PROFILE_EMOJI = {
+    adults:'🧑', diabetics:'🩸', infants:'👶', pregnant:'🤰', hypertension:'❤️', elderly:'🧓', fitness:'💪'
+  };
+  const SAFETY_COLORS = { good:'#639922', okay:'#A8A69F', caution:'#BA7517', avoid:'#E24B4A', unknown:'#A8A69F' };
+
+  function switchTab(tab) {
+    activeTab = tab;
+    document.getElementById('tab-text').classList.toggle('active', tab === 'text');
+    document.getElementById('tab-image').classList.toggle('active', tab === 'image');
+    document.getElementById('text-panel').style.display = tab === 'text' ? 'block' : 'none';
+    document.getElementById('image-panel').style.display = tab === 'image' ? 'block' : 'none';
+  }
+
+  function handleFile(input) {
+    selectedFile = input.files[0];
+    document.getElementById('filename-display').textContent = selectedFile ? '✅ ' + selectedFile.name : '';
+  }
+
+  async function analyze() {
+    const btn = document.getElementById('analyze-btn');
+    btn.disabled = true;
+    document.getElementById('loading').style.display = 'block';
+    document.getElementById('results').style.display = 'none';
+    document.getElementById('hero-section').style.display = 'none';
+    document.getElementById('stats-strip').style.display = 'none';
+    document.getElementById('input-section').style.display = 'none';
+
+    try {
+      let response;
+      if (activeTab === 'image' && selectedFile) {
+        const fd = new FormData();
+        fd.append('image', selectedFile);
+        response = await fetch('/analyze', { method: 'POST', body: fd });
+      } else {
+        const text = document.getElementById('ingredients-text').value.trim();
+        if (!text) { alert('Please enter some ingredients first.'); return; }
+        response = await fetch('/analyze', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ text })
+        });
+      }
+      const data = await response.json();
+      if (data.error) { alert(data.error); return; }
+      renderResults(data);
+    } catch(e) {
+      alert('Something went wrong. Make sure the server is running.');
+      document.getElementById('input-section').style.display = 'block';
+      document.getElementById('hero-section').style.display = 'block';
+      document.getElementById('stats-strip').style.display = 'flex';
+    } finally {
+      btn.disabled = false;
+      document.getElementById('loading').style.display = 'none';
+    }
+  }
+
+  function renderResults(data) {
+    const { ingredients, verdicts, summary, unmatched } = data;
+
+    const overallMap = { 'High concern':'avoid', 'Moderate concern':'caution', 'Generally okay':'good' };
+    const cls = overallMap[summary.overall] || 'caution';
+    const badgeEmoji = { avoid:'🔴', caution:'🟡', good:'🟢' };
+    const resultEmoji = { avoid:'⚠️', caution:'🟡', good:'✅' };
+    document.getElementById('result-icon').textContent = resultEmoji[cls];
+    const badgeEl = document.getElementById('overall-badge');
+    badgeEl.className = `overall-badge ${cls}`;
+    badgeEl.innerHTML = `${badgeEmoji[cls]} ${summary.overall}`;
+
+    renderJar(ingredients);
+    renderSpoons(ingredients);
+    renderVerdicts(verdicts);
+    renderSummary(summary, ingredients);
+
+    const umBox = document.getElementById('unmatched-box');
+    if (unmatched && unmatched.length) {
+      document.getElementById('unmatched-text').textContent = `Not in our database yet: ${unmatched.join(', ')}`;
+      umBox.style.display = 'block';
+    } else { umBox.style.display = 'none'; }
+
+    document.getElementById('results').style.display = 'block';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function renderJar(ingredients) {
+    const layersEl = document.getElementById('jar-layers');
+    const legendEl = document.getElementById('jar-legend');
+    layersEl.innerHTML = ''; legendEl.innerHTML = '';
+    const jarTop = 58, jarHeight = 142;
+    let y = jarTop + jarHeight;
+    ingredients.forEach(ing => {
+      const h = Math.round((ing.percent / 100) * jarHeight);
+      y -= h;
+      const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+      rect.setAttribute('x', '12'); rect.setAttribute('y', String(y));
+      rect.setAttribute('width', '136'); rect.setAttribute('height', String(h + 1));
+      rect.setAttribute('fill', ing.color); rect.setAttribute('clip-path', 'url(#jc)');
+      layersEl.appendChild(rect);
+      const row = document.createElement('div');
+      row.className = 'legend-row';
+      row.innerHTML = `<div class="legend-dot" style="background:${ing.color}"></div><span class="legend-name">${ing.name}</span><span class="legend-pct">${ing.percent}%</span>`;
+      legendEl.appendChild(row);
+    });
+  }
+
+  function renderSpoons(ingredients) {
+    const el = document.getElementById('spoon-breakdown');
+    el.innerHTML = '';
+    ingredients.forEach(ing => {
+      const spoons = Math.min(ing.spoons, 8);
+      const spoonStr = '🥄'.repeat(spoons) + (ing.spoons > 8 ? ` +${ing.spoons - 8}` : '');
+      const row = document.createElement('div');
+      row.className = 'spoon-row';
+      row.innerHTML = `
+        <div class="safety-dot" style="background:${SAFETY_COLORS[ing.safety]||'#A8A69F'}"></div>
+        <span class="spoon-name">${ing.spoon_label}</span>
+        <div class="spoon-right">
+          <div class="spoon-icons">${spoonStr}</div>
+          <div class="spoon-note">${ing.note}</div>
+        </div>`;
+      el.appendChild(row);
+    });
+  }
+
+  function renderVerdicts(verdicts) {
+    const grid = document.getElementById('verdict-grid');
+    grid.innerHTML = '';
+    Object.entries(verdicts).forEach(([profile, v]) => {
+      const card = document.createElement('div');
+      card.className = `verdict-card ${v.verdict}`;
+      const reasons = v.reasons.length ? v.reasons.map(r => `• ${r}`).join('<br>') : 'No specific concerns.';
+      card.innerHTML = `
+        <span class="verdict-emoji">${PROFILE_EMOJI[profile]}</span>
+        <div class="verdict-who">${PROFILE_LABELS[profile]}</div>
+        <span class="verdict-pill">${v.label}</span>
+        <div class="verdict-reasons">${reasons}</div>`;
+      grid.appendChild(card);
+    });
+  }
+
+  function renderSummary(summary, ingredients) {
+    const el = document.getElementById('summary-box');
+    const top = ingredients[0];
+    const flagged = ingredients.filter(i => i.safety === 'avoid').map(i => i.name);
+    let text = `This product is <strong>${summary.main_percent}% ${top.name}</strong> by weight. `;
+    if (flagged.length) text += `Contains <strong>${flagged.join(', ')}</strong> — worth avoiding regularly. `;
+    const lines = { 'High concern':'Look for an alternative with fewer additives.', 'Moderate concern':'Fine occasionally — not ideal daily.', 'Generally okay':'Reasonable choice — watch portion sizes.' };
+    text += `Overall verdict: <strong>${summary.overall}</strong>. ${lines[summary.overall]||''}`;
+    el.innerHTML = text;
+  }
+
+  function reset() {
+    document.getElementById('results').style.display = 'none';
+    document.getElementById('input-section').style.display = 'block';
+    document.getElementById('hero-section').style.display = 'block';
+    document.getElementById('stats-strip').style.display = 'flex';
+    document.getElementById('ingredients-text').value = '';
+    document.getElementById('filename-display').textContent = '';
+    selectedFile = null;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+</body>
+</html>

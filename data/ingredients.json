@@ -1,0 +1,2924 @@
+{
+  "peanuts": {
+    "name": "Peanuts",
+    "aliases": [
+      "groundnuts",
+      "peanut",
+      "roasted peanuts",
+      "salted peanuts",
+      "fried gram",
+      "hurikadalai"
+    ],
+    "safety": "good",
+    "color": "#97C459",
+    "spoon_label": "peanuts (protein + good fat)",
+    "note": "Good source of protein and healthy fats. Watch portion size.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "caution",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "good"
+    },
+    "profile_notes": {
+      "infants": "Peanuts — allergy risk, introduce carefully under guidance"
+    }
+  },
+  "palm_oil": {
+    "name": "Palm oil",
+    "aliases": [
+      "refined palm oil",
+      "palmolein",
+      "palm olein",
+      "refined palmolein",
+      "edible vegetable oil",
+      "vegetable oil",
+      "cooking oil",
+      "refined vegetable oil",
+      "interesterified fat"
+    ],
+    "safety": "caution",
+    "color": "#EF9F27",
+    "spoon_label": "palm oil (saturated fat)",
+    "note": "High in saturated fat. Linked to raised LDL cholesterol. Very commonly used in Indian snacks.",
+    "profiles": {
+      "adults": "caution",
+      "diabetics": "caution",
+      "infants": "avoid",
+      "pregnant": "caution",
+      "hypertension": "avoid",
+      "elderly": "caution",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "infants": "Palm oil — not suitable for infants",
+      "hypertension": "Palm oil — raises bad cholesterol",
+      "pregnant": "Palm oil — limit intake"
+    }
+  },
+  "sugar": {
+    "name": "Sugar",
+    "aliases": [
+      "sucrose",
+      "cane sugar",
+      "refined sugar",
+      "added sugar",
+      "glucose",
+      "fructose",
+      "invert sugar",
+      "dextrose",
+      "jaggery",
+      "raw sugar",
+      "brown sugar",
+      "liquid glucose",
+      "glucose syrup",
+      "sugar syrup"
+    ],
+    "safety": "caution",
+    "color": "#F0997B",
+    "spoon_label": "sugar (empty calories)",
+    "note": "Added sugar with no nutritional benefit. Common hidden in 'healthy' products.",
+    "profiles": {
+      "adults": "caution",
+      "diabetics": "avoid",
+      "infants": "avoid",
+      "pregnant": "caution",
+      "hypertension": "caution",
+      "elderly": "caution",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "diabetics": "Sugar — directly raises blood glucose",
+      "infants": "Sugar — not suitable under 2 years",
+      "fitness": "Sugar — empty calories, causes fat storage"
+    }
+  },
+  "salt": {
+    "name": "Salt",
+    "aliases": [
+      "sodium chloride",
+      "iodised salt",
+      "iodized salt",
+      "common salt",
+      "sea salt",
+      "rock salt",
+      "edible salt",
+      "black salt",
+      "table salt"
+    ],
+    "safety": "okay",
+    "color": "#D3D1C7",
+    "spoon_label": "salt",
+    "note": "Small amounts fine. Indians typically consume 2-3x the safe daily limit already.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "avoid",
+      "pregnant": "okay",
+      "hypertension": "caution",
+      "elderly": "caution",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "infants": "Salt — infant kidneys cannot process sodium",
+      "hypertension": "Salt — directly raises blood pressure"
+    }
+  },
+  "wheat_flour": {
+    "name": "Wheat flour (maida)",
+    "aliases": [
+      "maida",
+      "refined wheat flour",
+      "flour",
+      "enriched flour",
+      "wheat flour",
+      "atta",
+      "wheat flour (atta)",
+      "refined flour",
+      "all purpose flour"
+    ],
+    "safety": "caution",
+    "color": "#FAC775",
+    "spoon_label": "wheat flour (refined carbs)",
+    "note": "Refined flour — stripped of fibre and nutrients, spikes blood sugar. Whole wheat atta is better.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "caution",
+      "infants": "caution",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "diabetics": "Maida — high glycemic index, raises blood glucose fast",
+      "infants": "Wheat — gluten may cause issues in young infants"
+    }
+  },
+  "whole_wheat_flour": {
+    "name": "Whole wheat flour",
+    "aliases": [
+      "whole wheat",
+      "whole wheat flour",
+      "whole grain wheat flour",
+      "wholemeal",
+      "multigrain flour"
+    ],
+    "safety": "good",
+    "color": "#BA7517",
+    "spoon_label": "whole wheat (fibre + nutrients)",
+    "note": "Much better than refined flour. Retains fibre, vitamins, and minerals.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "okay",
+      "infants": "caution",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {
+      "infants": "Wheat — contains gluten, avoid under 6 months",
+      "diabetics": "Whole wheat — better than maida but still watch portions"
+    }
+  },
+  "rice_flour": {
+    "name": "Rice flour",
+    "aliases": [
+      "rice flour",
+      "rice starch",
+      "puffed rice",
+      "murmura",
+      "rice"
+    ],
+    "safety": "okay",
+    "color": "#F1EFE8",
+    "spoon_label": "rice flour",
+    "note": "Gluten-free. High glycemic index — spikes blood sugar similarly to refined flour.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "caution",
+      "infants": "okay",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "diabetics": "Rice flour — high GI, raises blood glucose"
+    }
+  },
+  "milk_solids": {
+    "name": "Milk solids",
+    "aliases": [
+      "skimmed milk powder",
+      "milk powder",
+      "whole milk powder",
+      "dairy solids",
+      "whey",
+      "milk solids",
+      "condensed milk",
+      "dairy creamer",
+      "cream powder",
+      "lactose"
+    ],
+    "safety": "good",
+    "color": "#B5D4F4",
+    "spoon_label": "milk solids (calcium + protein)",
+    "note": "Good source of calcium and protein.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "caution",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {
+      "infants": "Milk solids — not a substitute for breast milk"
+    }
+  },
+  "hydrogenated_fat": {
+    "name": "Hydrogenated fat (vanaspati)",
+    "aliases": [
+      "vanaspati",
+      "dalda",
+      "hydrogenated oil",
+      "partially hydrogenated",
+      "trans fat",
+      "partially hydrogenated vegetable oil",
+      "hydrogenated vegetable fat",
+      "hydrogenated vegetable oil"
+    ],
+    "safety": "avoid",
+    "color": "#E24B4A",
+    "spoon_label": "trans fat (vanaspati) — avoid",
+    "note": "Trans fats. Strongly linked to heart disease. No safe level of consumption.",
+    "profiles": {
+      "adults": "avoid",
+      "diabetics": "avoid",
+      "infants": "avoid",
+      "pregnant": "avoid",
+      "hypertension": "avoid",
+      "elderly": "avoid",
+      "fitness": "avoid"
+    },
+    "profile_notes": {
+      "adults": "Trans fat — raises bad cholesterol, lowers good cholesterol",
+      "pregnant": "Trans fat — linked to complications",
+      "fitness": "Trans fat — interferes with cell function"
+    }
+  },
+  "soy_lecithin": {
+    "name": "Soy lecithin (322)",
+    "aliases": [
+      "e322",
+      "322",
+      "322(i)",
+      "lecithin",
+      "soya lecithin",
+      "sunflower lecithin",
+      "emulsifier 322",
+      "emulsifier e322"
+    ],
+    "safety": "okay",
+    "color": "#C0DD97",
+    "spoon_label": "lecithin emulsifier (322)",
+    "note": "Common emulsifier, generally safe. Soy allergen for some people.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "caution",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "infants": "Soy lecithin — soy allergy risk"
+    }
+  },
+  "e471": {
+    "name": "Emulsifier (471)",
+    "aliases": [
+      "e471",
+      "471",
+      "mono and diglycerides",
+      "glyceryl monostearate",
+      "emulsifier 471",
+      "emulsifier e471",
+      "mono- and di-glycerides"
+    ],
+    "safety": "caution",
+    "color": "#AFA9EC",
+    "spoon_label": "emulsifier E471",
+    "note": "Keeps texture smooth. Source often animal fat or palm-derived. Generally safe in small amounts.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "caution",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "infants": "E471 — source unclear, avoid in infants"
+    }
+  },
+  "emulsifier_472e": {
+    "name": "Emulsifier (472e)",
+    "aliases": [
+      "472e",
+      "472",
+      "acetic acid esters",
+      "datem",
+      "emulsifier 472",
+      "emulsifier 472e"
+    ],
+    "safety": "okay",
+    "color": "#9FE1CB",
+    "spoon_label": "emulsifier 472e",
+    "note": "Dough strengthener from fatty acids. Generally safe.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "caution",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "infants": "472e — avoid additive-heavy foods in infants"
+    }
+  },
+  "maltodextrin": {
+    "name": "Maltodextrin",
+    "aliases": [
+      "maltodextrin",
+      "modified starch",
+      "modified tapioca starch",
+      "starch",
+      "corn starch",
+      "food starch"
+    ],
+    "safety": "caution",
+    "color": "#FAC775",
+    "spoon_label": "maltodextrin (filler starch)",
+    "note": "Processed filler starch with GI higher than table sugar. Spikes blood glucose fast.",
+    "profiles": {
+      "adults": "caution",
+      "diabetics": "avoid",
+      "infants": "avoid",
+      "pregnant": "caution",
+      "hypertension": "okay",
+      "elderly": "caution",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "diabetics": "Maltodextrin — GI of 110, spikes blood sugar faster than sugar",
+      "infants": "Maltodextrin — ultra-processed, avoid for infants",
+      "fitness": "Maltodextrin — causes energy crash after spike"
+    }
+  },
+  "malt_extract": {
+    "name": "Malt extract",
+    "aliases": [
+      "malt extract",
+      "barley malt extract",
+      "malt",
+      "barley extract"
+    ],
+    "safety": "caution",
+    "color": "#EF9F27",
+    "spoon_label": "malt extract (barley sugar)",
+    "note": "Natural sweetener from barley. Contains gluten. Raises blood sugar.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "caution",
+      "infants": "caution",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "diabetics": "Malt extract — raises blood glucose",
+      "infants": "Malt extract — gluten content, avoid under 6 months"
+    }
+  },
+  "tocopherol": {
+    "name": "Antioxidant (307 / vitamin E)",
+    "aliases": [
+      "307c",
+      "307",
+      "307b",
+      "tocopherol",
+      "mixed tocopherols",
+      "antioxidant 307",
+      "vitamin e",
+      "antioxidant (307c)",
+      "alpha tocopherol"
+    ],
+    "safety": "good",
+    "color": "#C0DD97",
+    "spoon_label": "vitamin E antioxidant (307)",
+    "note": "Natural antioxidant — vitamin E. Used to prevent rancidity in oils. Safe for all.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "good",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {}
+  },
+  "sulphite_223": {
+    "name": "Dough conditioner / preservative (223)",
+    "aliases": [
+      "223",
+      "sodium metabisulphite",
+      "sodium metabisulfite",
+      "dough conditioner 223",
+      "sulphite",
+      "sulfite",
+      "dough conditioner (223)",
+      "preservative 223"
+    ],
+    "safety": "caution",
+    "color": "#F5C4B3",
+    "spoon_label": "sulphite (223) — allergen",
+    "note": "Can trigger asthma and allergic reactions in sulphite-sensitive people. A declared allergen.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "avoid",
+      "pregnant": "caution",
+      "hypertension": "okay",
+      "elderly": "caution",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "infants": "Sulphite 223 — allergic reactions in children",
+      "pregnant": "Sulphite — may trigger reactions",
+      "elderly": "Sulphite — can worsen asthma symptoms"
+    }
+  },
+  "raising_agent_503": {
+    "name": "Raising agent (503)",
+    "aliases": [
+      "503",
+      "503(i)",
+      "503(ii)",
+      "ammonium bicarbonate",
+      "ammonium carbonate",
+      "raising agent 503",
+      "leavening agent 503"
+    ],
+    "safety": "okay",
+    "color": "#D3D1C7",
+    "spoon_label": "raising agent (503)",
+    "note": "Leavening agent for biscuits/cakes. Breaks down completely during baking — safe.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "caution",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "infants": "Raising agents — avoid additive-heavy processed foods for infants"
+    }
+  },
+  "raising_agent_500": {
+    "name": "Raising agent (500 / baking soda)",
+    "aliases": [
+      "500",
+      "500(i)",
+      "500(ii)",
+      "sodium bicarbonate",
+      "baking soda",
+      "raising agent 500",
+      "leavening 500"
+    ],
+    "safety": "okay",
+    "color": "#D3D1C7",
+    "spoon_label": "baking soda (500)",
+    "note": "Common baking soda. Safe in food amounts.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "okay",
+      "pregnant": "okay",
+      "hypertension": "caution",
+      "elderly": "okay",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "hypertension": "Sodium bicarbonate — adds to sodium intake"
+    }
+  },
+  "maltitol": {
+    "name": "Sweetener — maltitol (965)",
+    "aliases": [
+      "965",
+      "965(i)",
+      "965(ii)",
+      "maltitol",
+      "maltitol syrup",
+      "sweetener 965"
+    ],
+    "safety": "caution",
+    "color": "#CECBF6",
+    "spoon_label": "maltitol sweetener (965)",
+    "note": "Sugar alcohol. Still raises blood sugar. Causes bloating and digestive distress in larger amounts.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "caution",
+      "infants": "avoid",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "caution",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "diabetics": "Maltitol — raises blood sugar unlike other sugar alcohols",
+      "infants": "Sweeteners — not suitable under 2 years",
+      "elderly": "Maltitol — may cause digestive discomfort"
+    }
+  },
+  "sucralose": {
+    "name": "Sweetener — sucralose (955)",
+    "aliases": [
+      "955",
+      "sweetener 955",
+      "sucralose"
+    ],
+    "safety": "caution",
+    "color": "#AFA9EC",
+    "spoon_label": "sucralose sweetener (955)",
+    "note": "600x sweeter than sugar. Long-term effects still studied. Disrupts gut bacteria in some research.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "avoid",
+      "pregnant": "caution",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "infants": "Sucralose — artificial sweeteners not suitable for infants",
+      "pregnant": "Sucralose — limited safety data in pregnancy"
+    }
+  },
+  "acesulfame_k": {
+    "name": "Sweetener — acesulfame-K (950)",
+    "aliases": [
+      "950",
+      "acesulfame k",
+      "acesulfame-k",
+      "acesulfame potassium",
+      "sweetener 950",
+      "ace-k"
+    ],
+    "safety": "caution",
+    "color": "#AFA9EC",
+    "spoon_label": "acesulfame-K sweetener (950)",
+    "note": "Artificial sweetener often paired with sucralose. Passes through body unchanged. Long-term safety debated.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "avoid",
+      "pregnant": "caution",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "infants": "Artificial sweeteners — not suitable for infants",
+      "pregnant": "Acesulfame-K — limited safety data, best avoided"
+    }
+  },
+  "aspartame": {
+    "name": "Sweetener — aspartame (951)",
+    "aliases": [
+      "951",
+      "aspartame",
+      "sweetener 951",
+      "nutrasweet",
+      "equal"
+    ],
+    "safety": "caution",
+    "color": "#ED93B1",
+    "spoon_label": "aspartame sweetener (951)",
+    "note": "Contains phenylalanine — dangerous for people with PKU. WHO classified as 'possibly carcinogenic' in 2023.",
+    "profiles": {
+      "adults": "caution",
+      "diabetics": "caution",
+      "infants": "avoid",
+      "pregnant": "avoid",
+      "hypertension": "okay",
+      "elderly": "caution",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "pregnant": "Aspartame — WHO classified as possible carcinogen in 2023, avoid",
+      "infants": "Aspartame — not suitable, contains phenylalanine",
+      "adults": "Aspartame — WHO 2023 review raised cancer concerns at high intake"
+    }
+  },
+  "stevia": {
+    "name": "Sweetener — stevia (960)",
+    "aliases": [
+      "960",
+      "stevia",
+      "steviol glycosides",
+      "sweetener 960",
+      "rebiana"
+    ],
+    "safety": "good",
+    "color": "#C0DD97",
+    "spoon_label": "stevia (natural sweetener)",
+    "note": "Plant-derived natural sweetener. Does not raise blood sugar. One of the safer sweeteners.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "caution",
+      "pregnant": "okay",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {
+      "infants": "Stevia — not well studied in very young children"
+    }
+  },
+  "msg": {
+    "name": "MSG / flavour enhancer (621)",
+    "aliases": [
+      "621",
+      "msg",
+      "monosodium glutamate",
+      "flavour enhancer 621",
+      "flavor enhancer 621",
+      "ajinomoto"
+    ],
+    "safety": "caution",
+    "color": "#F0997B",
+    "spoon_label": "MSG flavour enhancer (621)",
+    "note": "Common in chips, instant noodles, snack mixes. Some people report headaches and nausea. Regulated but not banned in India.",
+    "profiles": {
+      "adults": "caution",
+      "diabetics": "okay",
+      "infants": "avoid",
+      "pregnant": "caution",
+      "hypertension": "caution",
+      "elderly": "caution",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "infants": "MSG — not suitable for infants",
+      "pregnant": "MSG — some studies suggest caution",
+      "hypertension": "MSG — high sodium content",
+      "elderly": "MSG — linked to headaches and sensitivity reactions"
+    }
+  },
+  "ins_635": {
+    "name": "Flavour enhancer (635)",
+    "aliases": [
+      "635",
+      "ins 635",
+      "disodium ribonucleotides",
+      "disodium 5-ribonucleotide",
+      "flavor enhancer 635",
+      "flavour enhancer 635"
+    ],
+    "safety": "caution",
+    "color": "#F0997B",
+    "spoon_label": "flavour booster 635 (like MSG)",
+    "note": "Used with MSG for stronger flavour. Brands use it to claim 'No MSG' while getting same effect. Gout risk.",
+    "profiles": {
+      "adults": "caution",
+      "diabetics": "okay",
+      "infants": "avoid",
+      "pregnant": "caution",
+      "hypertension": "caution",
+      "elderly": "avoid",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "infants": "635 — not suitable for infants",
+      "elderly": "635 — raises uric acid, gout risk",
+      "pregnant": "635 — avoid in first trimester"
+    }
+  },
+  "tartrazine": {
+    "name": "Food colour — tartrazine (102)",
+    "aliases": [
+      "102",
+      "tartrazine",
+      "e102",
+      "yellow 5",
+      "food colour 102",
+      "fd&c yellow 5"
+    ],
+    "safety": "avoid",
+    "color": "#EF9F27",
+    "spoon_label": "artificial yellow dye (102)",
+    "note": "Synthetic yellow dye. Linked to hyperactivity in children. Banned in some countries. Watch for in candies, chips, and drinks.",
+    "profiles": {
+      "adults": "caution",
+      "diabetics": "okay",
+      "infants": "avoid",
+      "pregnant": "avoid",
+      "hypertension": "okay",
+      "elderly": "caution",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "infants": "Tartrazine — linked to hyperactivity and allergies in children",
+      "pregnant": "Tartrazine — avoid artificial dyes during pregnancy"
+    }
+  },
+  "sunset_yellow": {
+    "name": "Food colour — sunset yellow (110)",
+    "aliases": [
+      "110",
+      "sunset yellow",
+      "e110",
+      "yellow 6",
+      "food colour 110"
+    ],
+    "safety": "avoid",
+    "color": "#D85A30",
+    "spoon_label": "artificial orange dye (110)",
+    "note": "Synthetic orange dye. Linked to hyperactivity. Banned in Norway. Common in Indian sweets and drinks.",
+    "profiles": {
+      "adults": "caution",
+      "diabetics": "okay",
+      "infants": "avoid",
+      "pregnant": "avoid",
+      "hypertension": "okay",
+      "elderly": "caution",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "infants": "Sunset yellow — linked to behavioural issues in children",
+      "pregnant": "Sunset yellow — avoid artificial dyes"
+    }
+  },
+  "caramel_colour": {
+    "name": "Caramel colour (150)",
+    "aliases": [
+      "150",
+      "150a",
+      "150b",
+      "150c",
+      "150d",
+      "caramel colour",
+      "caramel color",
+      "caramel colouring",
+      "e150"
+    ],
+    "safety": "caution",
+    "color": "#712B13",
+    "spoon_label": "caramel colour (150)",
+    "note": "Type 150d (used in colas) contains 4-MEI — a potential carcinogen. Common in sauces, soy sauce, colas, baked goods.",
+    "profiles": {
+      "adults": "caution",
+      "diabetics": "okay",
+      "infants": "avoid",
+      "pregnant": "caution",
+      "hypertension": "okay",
+      "elderly": "caution",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "infants": "Caramel colour — avoid artificial additives for infants",
+      "pregnant": "Caramel 150d — potential carcinogen, limit cola consumption"
+    }
+  },
+  "sodium_benzoate": {
+    "name": "Preservative — sodium benzoate (211)",
+    "aliases": [
+      "e211",
+      "211",
+      "sodium benzoate",
+      "preservative 211",
+      "benzoate of soda"
+    ],
+    "safety": "caution",
+    "color": "#F4C0D1",
+    "spoon_label": "preservative sodium benzoate (211)",
+    "note": "Reacts with vitamin C to form benzene — a known carcinogen. Common in juices and soft drinks.",
+    "profiles": {
+      "adults": "caution",
+      "diabetics": "okay",
+      "infants": "avoid",
+      "pregnant": "caution",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "infants": "211 — linked to hyperactivity in children",
+      "pregnant": "211 — avoid in first trimester",
+      "adults": "211 + vitamin C = benzene, a carcinogen"
+    }
+  },
+  "potassium_sorbate": {
+    "name": "Preservative — potassium sorbate (202)",
+    "aliases": [
+      "202",
+      "potassium sorbate",
+      "preservative 202",
+      "sorbate"
+    ],
+    "safety": "okay",
+    "color": "#D3D1C7",
+    "spoon_label": "preservative (202)",
+    "note": "Common preservative in bread, cheese, juices. Generally safe at food levels.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "caution",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "infants": "Preservatives — avoid processed foods for infants"
+    }
+  },
+  "citric_acid": {
+    "name": "Acidity regulator — citric acid (330)",
+    "aliases": [
+      "330",
+      "citric acid",
+      "e330",
+      "acidity regulator 330",
+      "food acid 330"
+    ],
+    "safety": "okay",
+    "color": "#C0DD97",
+    "spoon_label": "citric acid (330)",
+    "note": "Naturally found in citrus fruits. Safe. Adds sour taste and acts as preservative.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "okay",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "okay"
+    },
+    "profile_notes": {}
+  },
+  "ascorbic_acid": {
+    "name": "Vitamin C / antioxidant (300)",
+    "aliases": [
+      "300",
+      "ascorbic acid",
+      "vitamin c",
+      "e300",
+      "antioxidant 300"
+    ],
+    "safety": "good",
+    "color": "#C0DD97",
+    "spoon_label": "vitamin C antioxidant (300)",
+    "note": "Vitamin C — natural antioxidant. Safe and beneficial. Caution: reacts with sodium benzoate (211) to form benzene.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "good",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {}
+  },
+  "bha_bht": {
+    "name": "Antioxidant BHA/BHT (320/321)",
+    "aliases": [
+      "320",
+      "321",
+      "bha",
+      "bht",
+      "butylated hydroxyanisole",
+      "butylated hydroxytoluene",
+      "antioxidant 320",
+      "antioxidant 321"
+    ],
+    "safety": "avoid",
+    "color": "#E24B4A",
+    "spoon_label": "BHA/BHT synthetic antioxidant — avoid",
+    "note": "Synthetic antioxidants. BHA (320) classified as possible carcinogen. Common in chips, fried snacks, packaged nuts.",
+    "profiles": {
+      "adults": "caution",
+      "diabetics": "okay",
+      "infants": "avoid",
+      "pregnant": "avoid",
+      "hypertension": "okay",
+      "elderly": "caution",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "infants": "BHA/BHT — synthetic chemicals, avoid in children",
+      "pregnant": "BHA — possible carcinogen, avoid during pregnancy"
+    }
+  },
+  "tbhq": {
+    "name": "Antioxidant TBHQ (319)",
+    "aliases": [
+      "319",
+      "tbhq",
+      "tertiary butylhydroquinone",
+      "antioxidant 319"
+    ],
+    "safety": "avoid",
+    "color": "#E24B4A",
+    "spoon_label": "TBHQ synthetic antioxidant (319)",
+    "note": "Synthetic antioxidant. Very common in Indian fried snacks and biscuits. Linked to DNA damage in high doses.",
+    "profiles": {
+      "adults": "caution",
+      "diabetics": "okay",
+      "infants": "avoid",
+      "pregnant": "avoid",
+      "hypertension": "okay",
+      "elderly": "caution",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "infants": "TBHQ — avoid synthetic antioxidants for infants",
+      "pregnant": "TBHQ — linked to cell damage, avoid during pregnancy",
+      "adults": "TBHQ — safe at regulated levels but cumulative exposure is a concern"
+    }
+  },
+  "guar_gum": {
+    "name": "Thickener — guar gum (412)",
+    "aliases": [
+      "412",
+      "guar gum",
+      "e412",
+      "thickener 412",
+      "guar"
+    ],
+    "safety": "good",
+    "color": "#C0DD97",
+    "spoon_label": "guar gum thickener (412)",
+    "note": "Natural plant-based thickener and fibre source. Safe. Actually good for digestion.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "okay",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {}
+  },
+  "xanthan_gum": {
+    "name": "Thickener — xanthan gum (415)",
+    "aliases": [
+      "415",
+      "xanthan gum",
+      "e415",
+      "thickener 415"
+    ],
+    "safety": "okay",
+    "color": "#C0DD97",
+    "spoon_label": "xanthan gum thickener (415)",
+    "note": "Fermentation-derived thickener. Safe for most people. Can cause bloating in sensitive individuals.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "caution",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "infants": "Xanthan gum — linked to necrotising enterocolitis in premature infants"
+    }
+  },
+  "carrageenan": {
+    "name": "Thickener — carrageenan (407)",
+    "aliases": [
+      "407",
+      "carrageenan",
+      "e407",
+      "thickener 407",
+      "irish moss extract"
+    ],
+    "safety": "caution",
+    "color": "#F5C4B3",
+    "spoon_label": "carrageenan thickener (407)",
+    "note": "Seaweed-derived thickener. Common in dairy drinks and ice cream. Linked to gut inflammation in some studies.",
+    "profiles": {
+      "adults": "caution",
+      "diabetics": "okay",
+      "infants": "avoid",
+      "pregnant": "caution",
+      "hypertension": "okay",
+      "elderly": "caution",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "infants": "Carrageenan — linked to gut inflammation, avoid in infant foods",
+      "pregnant": "Carrageenan — limit consumption",
+      "elderly": "Carrageenan — may worsen gut conditions"
+    }
+  },
+  "cocoa": {
+    "name": "Cocoa",
+    "aliases": [
+      "cocoa powder",
+      "cacao",
+      "dark chocolate",
+      "cocoa solids",
+      "chocolate",
+      "cocoa mass",
+      "chocolate liquor"
+    ],
+    "safety": "good",
+    "color": "#712B13",
+    "spoon_label": "cocoa (antioxidants)",
+    "note": "Rich in antioxidants. Good in moderation. Usually paired with lots of sugar in packaged products.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "okay",
+      "infants": "avoid",
+      "pregnant": "okay",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {
+      "infants": "Cocoa — contains caffeine, avoid under 2 years",
+      "diabetics": "Cocoa — pure cocoa is fine, watch added sugar alongside"
+    }
+  },
+  "raising_503": {
+    "name": "Raising agent (503)",
+    "aliases": [
+      "503",
+      "503(i)",
+      "503(ii)",
+      "ammonium bicarbonate",
+      "ammonium carbonate",
+      "raising agent 503"
+    ],
+    "safety": "okay",
+    "color": "#D3D1C7",
+    "spoon_label": "raising agent (503)",
+    "note": "Leavening agent — breaks down completely during baking. Safe.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "caution",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "infants": "Raising agents — avoid additive-heavy processed foods for infants"
+    }
+  },
+  "raising_500": {
+    "name": "Raising agent (500 / baking soda)",
+    "aliases": [
+      "500",
+      "500(i)",
+      "500(ii)",
+      "sodium bicarbonate",
+      "baking soda",
+      "raising agent 500"
+    ],
+    "safety": "okay",
+    "color": "#D3D1C7",
+    "spoon_label": "baking soda (500)",
+    "note": "Common baking soda. Safe in food amounts.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "okay",
+      "pregnant": "okay",
+      "hypertension": "caution",
+      "elderly": "okay",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "hypertension": "Sodium bicarbonate — adds to daily sodium intake"
+    }
+  },
+  "sulphite": {
+    "name": "Preservative / dough conditioner (223 / 221)",
+    "aliases": [
+      "223",
+      "221",
+      "sodium metabisulphite",
+      "sodium metabisulfite",
+      "dough conditioner 223",
+      "sulphite",
+      "sulfite",
+      "sodium sulphite",
+      "dough conditioner (223)",
+      "preservative 223",
+      "preservative 221"
+    ],
+    "safety": "caution",
+    "color": "#F5C4B3",
+    "spoon_label": "sulphite preservative (223)",
+    "note": "Can trigger asthma and allergic reactions. A declared allergen on Indian labels.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "avoid",
+      "pregnant": "caution",
+      "hypertension": "okay",
+      "elderly": "caution",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "infants": "Sulphite — allergic reactions in sensitive children",
+      "pregnant": "Sulphite — may trigger reactions",
+      "elderly": "Sulphite — can worsen asthma"
+    }
+  },
+  "artificial_flavouring": {
+    "name": "Artificial flavouring",
+    "aliases": [
+      "artificial flavouring",
+      "artificial flavoring",
+      "nature identical flavouring",
+      "nature identical & artificial",
+      "milk flavouring",
+      "flavouring substances",
+      "artificial flavouring substances",
+      "nature identical flavouring substances",
+      "nature identical",
+      "flavouring",
+      "permitted natural flavour",
+      "natural flavour",
+      "artificial flavor"
+    ],
+    "safety": "caution",
+    "color": "#ED93B1",
+    "spoon_label": "artificial flavouring",
+    "note": "Synthetic flavour chemicals. Exact composition often undisclosed on label.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "avoid",
+      "pregnant": "caution",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "infants": "Artificial flavouring — not suitable for infants",
+      "pregnant": "Artificial flavouring — undisclosed chemicals, best avoided"
+    }
+  },
+  "wheat_bran": {
+    "name": "Wheat bran",
+    "aliases": [
+      "wheat bran",
+      "bran",
+      "oat bran"
+    ],
+    "safety": "good",
+    "color": "#BA7517",
+    "spoon_label": "wheat bran (fibre)",
+    "note": "High in fibre. Great for digestion and blood sugar control. Contains gluten.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "caution",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {
+      "infants": "Wheat bran — gluten content, avoid under 6 months"
+    }
+  },
+  "spice": {
+    "name": "Spices",
+    "aliases": [
+      "spice",
+      "spices",
+      "mixed spices",
+      "natural spices",
+      "herbs",
+      "chilli powder",
+      "turmeric",
+      "cumin",
+      "coriander",
+      "pepper",
+      "asafoetida",
+      "hing",
+      "curry leaves",
+      "mustard seeds"
+    ],
+    "safety": "good",
+    "color": "#D85A30",
+    "spoon_label": "spices (natural)",
+    "note": "Natural spices. Generally safe and anti-inflammatory.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "caution",
+      "pregnant": "okay",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {
+      "infants": "Spices — may irritate infant digestive system"
+    }
+  },
+  "corn": {
+    "name": "Corn / maize",
+    "aliases": [
+      "corn",
+      "maize",
+      "corn flour",
+      "maize flour",
+      "corn meal",
+      "popcorn",
+      "corn starch",
+      "cornflour",
+      "makkai"
+    ],
+    "safety": "okay",
+    "color": "#FAC775",
+    "spoon_label": "corn / maize",
+    "note": "Common base for chips and snacks. High starch content.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "caution",
+      "infants": "okay",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "diabetics": "Corn — moderate glycemic index, watch portions"
+    }
+  },
+  "potato": {
+    "name": "Potato / potato starch",
+    "aliases": [
+      "potato",
+      "potato starch",
+      "potato flour",
+      "dehydrated potato",
+      "potato flakes",
+      "potato chips",
+      "potato powder"
+    ],
+    "safety": "okay",
+    "color": "#FAC775",
+    "spoon_label": "potato starch",
+    "note": "Natural vegetable. High glycemic index especially when fried.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "caution",
+      "infants": "okay",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "diabetics": "Potato — high GI, spikes blood sugar especially when fried"
+    }
+  },
+  "soy_protein": {
+    "name": "Soy protein / soya",
+    "aliases": [
+      "soy",
+      "soya",
+      "soy protein",
+      "soya protein",
+      "soy flour",
+      "soya flour",
+      "textured soy",
+      "textured vegetable protein",
+      "tvp",
+      "soy isolate"
+    ],
+    "safety": "good",
+    "color": "#97C459",
+    "spoon_label": "soy protein",
+    "note": "Good plant protein source. Allergen for some. Contains phytoestrogens.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "caution",
+      "pregnant": "okay",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {
+      "infants": "Soy — top allergen, introduce carefully"
+    }
+  },
+  "vegetable_fat": {
+    "name": "Vegetable fat / shortening",
+    "aliases": [
+      "vegetable fat",
+      "vegetable shortening",
+      "shortening",
+      "edible fat",
+      "bakery fat",
+      "refined vegetable fat"
+    ],
+    "safety": "caution",
+    "color": "#EF9F27",
+    "spoon_label": "vegetable fat (check type)",
+    "note": "Vague label — could be palm oil, coconut oil, or partially hydrogenated fat. Ask for source.",
+    "profiles": {
+      "adults": "caution",
+      "diabetics": "caution",
+      "infants": "caution",
+      "pregnant": "caution",
+      "hypertension": "caution",
+      "elderly": "caution",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "adults": "Vegetable fat — source matters hugely; palm = saturated, hydrogenated = trans fat"
+    }
+  },
+  "coconut_oil": {
+    "name": "Coconut oil",
+    "aliases": [
+      "coconut oil",
+      "virgin coconut oil",
+      "refined coconut oil",
+      "copra oil"
+    ],
+    "safety": "caution",
+    "color": "#F1EFE8",
+    "spoon_label": "coconut oil (saturated fat)",
+    "note": "High in saturated fat but a different type than palm oil. Better than vanaspati. Use in moderation.",
+    "profiles": {
+      "adults": "caution",
+      "diabetics": "caution",
+      "infants": "okay",
+      "pregnant": "okay",
+      "hypertension": "caution",
+      "elderly": "caution",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "hypertension": "Coconut oil — high saturated fat, watch total intake"
+    }
+  },
+  "groundnut_oil": {
+    "name": "Groundnut oil (peanut oil)",
+    "aliases": [
+      "groundnut oil",
+      "peanut oil",
+      "arachis oil",
+      "cold pressed groundnut oil"
+    ],
+    "safety": "good",
+    "color": "#C0DD97",
+    "spoon_label": "groundnut oil (healthier oil)",
+    "note": "One of the healthier oils used in Indian snacks. Rich in monounsaturated fats.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "caution",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {
+      "infants": "Groundnut oil — peanut allergy risk"
+    }
+  },
+  "sesame_seeds": {
+    "name": "Sesame seeds / til",
+    "aliases": [
+      "sesame",
+      "sesame seeds",
+      "til",
+      "gingelly",
+      "sesame oil",
+      "gingelly oil",
+      "tahini"
+    ],
+    "safety": "good",
+    "color": "#D3D1C7",
+    "spoon_label": "sesame seeds (til)",
+    "note": "Good source of calcium and healthy fats. Allergen for some.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "caution",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {
+      "infants": "Sesame — allergen, introduce carefully"
+    }
+  },
+  "oats": {
+    "name": "Oats",
+    "aliases": [
+      "oats",
+      "rolled oats",
+      "oat flour",
+      "oatmeal",
+      "whole oats",
+      "quick oats"
+    ],
+    "safety": "good",
+    "color": "#C0DD97",
+    "spoon_label": "oats (fibre + protein)",
+    "note": "Excellent source of soluble fibre. Lowers cholesterol. Good for blood sugar control.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "caution",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {
+      "infants": "Oats — introduce carefully after 6 months"
+    }
+  },
+  "milk": {
+    "name": "Milk",
+    "aliases": [
+      "milk",
+      "whole milk",
+      "toned milk",
+      "double toned milk",
+      "dairy milk",
+      "full cream milk",
+      "skimmed milk",
+      "buffalo milk",
+      "cow milk"
+    ],
+    "safety": "good",
+    "color": "#B5D4F4",
+    "spoon_label": "milk (calcium + protein)",
+    "note": "Good source of calcium, protein, and vitamins. Dairy allergen for some.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "caution",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {
+      "infants": "Cow's milk — not suitable as main drink before 1 year"
+    }
+  },
+  "butter": {
+    "name": "Butter",
+    "aliases": [
+      "butter",
+      "white butter",
+      "salted butter",
+      "unsalted butter",
+      "clarified butter"
+    ],
+    "safety": "caution",
+    "color": "#FAC775",
+    "spoon_label": "butter (saturated fat)",
+    "note": "Natural dairy fat. High in saturated fat. Better than vanaspati but use in moderation.",
+    "profiles": {
+      "adults": "caution",
+      "diabetics": "caution",
+      "infants": "okay",
+      "pregnant": "okay",
+      "hypertension": "caution",
+      "elderly": "caution",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "hypertension": "Butter — saturated fat raises LDL cholesterol"
+    }
+  },
+  "ghee": {
+    "name": "Ghee (clarified butter)",
+    "aliases": [
+      "ghee",
+      "clarified butter",
+      "desi ghee",
+      "cow ghee"
+    ],
+    "safety": "caution",
+    "color": "#FAC775",
+    "spoon_label": "ghee (saturated fat)",
+    "note": "Traditional Indian fat. Rich in fat-soluble vitamins. High in saturated fat — use in moderation.",
+    "profiles": {
+      "adults": "caution",
+      "diabetics": "caution",
+      "infants": "okay",
+      "pregnant": "okay",
+      "hypertension": "caution",
+      "elderly": "caution",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "hypertension": "Ghee — high saturated fat content"
+    }
+  },
+  "acidity_regulator_330": {
+    "name": "Acidity regulator (330 / citric acid)",
+    "aliases": [
+      "330",
+      "citric acid",
+      "e330",
+      "acidity regulator 330"
+    ],
+    "safety": "okay",
+    "color": "#C0DD97",
+    "spoon_label": "citric acid (330)",
+    "note": "Safe. Found naturally in citrus. Used in juices, candies, and chips.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "okay",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "okay"
+    },
+    "profile_notes": {}
+  },
+  "tamarind": {
+    "name": "Tamarind",
+    "aliases": [
+      "tamarind",
+      "tamarind extract",
+      "tamarind paste",
+      "imli"
+    ],
+    "safety": "good",
+    "color": "#D85A30",
+    "spoon_label": "tamarind (natural souring)",
+    "note": "Natural souring agent. Rich in antioxidants. Safe.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "okay",
+      "infants": "caution",
+      "pregnant": "okay",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {
+      "infants": "Tamarind — sour taste, may not suit infants"
+    }
+  },
+  "mango_pulp": {
+    "name": "Mango pulp / fruit pulp",
+    "aliases": [
+      "mango pulp",
+      "fruit pulp",
+      "mango puree",
+      "fruit concentrate",
+      "fruit juice concentrate",
+      "orange juice",
+      "apple juice",
+      "mixed fruit"
+    ],
+    "safety": "okay",
+    "color": "#EF9F27",
+    "spoon_label": "fruit pulp (natural sugars)",
+    "note": "Natural but concentrated — high in natural sugars. Much better than artificial flavouring.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "caution",
+      "infants": "okay",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "diabetics": "Fruit concentrate — high natural sugar, still raises blood glucose"
+    }
+  },
+  "inulin": {
+    "name": "Inulin / chicory fibre",
+    "aliases": [
+      "inulin",
+      "chicory root extract",
+      "chicory fibre",
+      "fructooligosaccharides",
+      "fos",
+      "prebiotic fibre"
+    ],
+    "safety": "good",
+    "color": "#C0DD97",
+    "spoon_label": "prebiotic fibre (inulin)",
+    "note": "Prebiotic fibre. Feeds good gut bacteria. May cause bloating in large amounts.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "caution",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {
+      "infants": "Inulin — prebiotic fibre not needed for infants"
+    }
+  },
+  "sunflower_oil": {
+    "name": "Sunflower oil",
+    "aliases": [
+      "sunflower oil",
+      "refined sunflower oil",
+      "high oleic sunflower oil"
+    ],
+    "safety": "good",
+    "color": "#FAC775",
+    "spoon_label": "sunflower oil (healthier oil)",
+    "note": "One of the healthier cooking oils. Rich in vitamin E and linoleic acid.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "good",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {}
+  },
+  "mustard_oil": {
+    "name": "Mustard oil",
+    "aliases": [
+      "mustard oil",
+      "sarson ka tel",
+      "mustard seed oil",
+      "cold pressed mustard oil"
+    ],
+    "safety": "good",
+    "color": "#EF9F27",
+    "spoon_label": "mustard oil",
+    "note": "Traditional Indian oil. Good fat profile. Some concern about erucic acid in very large quantities.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "caution",
+      "pregnant": "okay",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {
+      "infants": "Mustard oil — strong flavour and erucic acid content, introduce carefully"
+    }
+  },
+  "lentils": {
+    "name": "Lentils / dal",
+    "aliases": [
+      "lentils",
+      "dal",
+      "daal",
+      "chana dal",
+      "moong dal",
+      "masoor dal",
+      "toor dal",
+      "urad dal",
+      "tur dal",
+      "split peas",
+      "legume",
+      "pulses"
+    ],
+    "safety": "good",
+    "color": "#97C459",
+    "spoon_label": "lentils / dal (protein + fibre)",
+    "note": "Excellent source of plant protein and fibre. Low glycemic index.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "okay",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {}
+  },
+  "chickpeas": {
+    "name": "Chickpeas / besan",
+    "aliases": [
+      "chickpeas",
+      "chana",
+      "besan",
+      "gram flour",
+      "chickpea flour",
+      "garbanzo"
+    ],
+    "safety": "good",
+    "color": "#FAC775",
+    "spoon_label": "chickpeas / besan",
+    "note": "Excellent plant protein and fibre source. Low glycemic index. Good for blood sugar control.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "okay",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {}
+  },
+  "sodium_phosphate": {
+    "name": "Phosphate additive (339 / 450 / 451)",
+    "aliases": [
+      "339",
+      "450",
+      "451",
+      "452",
+      "sodium phosphate",
+      "disodium phosphate",
+      "trisodium phosphate",
+      "polyphosphate",
+      "diphosphate"
+    ],
+    "safety": "caution",
+    "color": "#AFA9EC",
+    "spoon_label": "phosphate additive",
+    "note": "Common in processed cheese, instant noodles. Excess phosphate linked to kidney stress and bone density loss.",
+    "profiles": {
+      "adults": "caution",
+      "diabetics": "caution",
+      "infants": "avoid",
+      "pregnant": "caution",
+      "hypertension": "caution",
+      "elderly": "avoid",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "infants": "Phosphates — avoid in infants",
+      "elderly": "Phosphates — excess linked to kidney and bone issues",
+      "hypertension": "Phosphates — may raise blood pressure"
+    }
+  },
+  "tapioca_starch": {
+    "name": "Tapioca starch / sabudana",
+    "aliases": [
+      "tapioca",
+      "tapioca starch",
+      "sabudana",
+      "cassava",
+      "cassava starch",
+      "modified tapioca starch"
+    ],
+    "safety": "okay",
+    "color": "#F1EFE8",
+    "spoon_label": "tapioca starch",
+    "note": "Gluten-free starch. High glycemic index. Often used as filler.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "caution",
+      "infants": "okay",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "diabetics": "Tapioca — high GI, raises blood glucose fast"
+    }
+  },
+  "whey_protein": {
+    "name": "Whey protein",
+    "aliases": [
+      "whey protein",
+      "whey protein concentrate",
+      "whey protein isolate",
+      "whey"
+    ],
+    "safety": "good",
+    "color": "#B5D4F4",
+    "spoon_label": "whey protein",
+    "note": "High quality dairy protein. Excellent for muscle building and satiety.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "caution",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {
+      "infants": "Whey — not suitable as main protein source for infants"
+    }
+  },
+  "water": {
+    "name": "Water",
+    "aliases": [
+      "water",
+      "drinking water",
+      "purified water",
+      "mineral water",
+      "aqua"
+    ],
+    "safety": "good",
+    "color": "#85B7EB",
+    "spoon_label": "water",
+    "note": "Plain water. Zero calories, zero concern.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "good",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {}
+  },
+  "glycerol": {
+    "name": "Glycerol / glycerin (422)",
+    "aliases": [
+      "glycerol",
+      "glycerin",
+      "glycerine",
+      "422",
+      "e422",
+      "humectant 422",
+      "vegetable glycerin"
+    ],
+    "safety": "okay",
+    "color": "#B5D4F4",
+    "spoon_label": "glycerol humectant (422)",
+    "note": "Keeps food moist. Derived from plant or animal fats. Safe at food levels. Slightly sweet.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "caution",
+      "infants": "okay",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "diabetics": "Glycerol — metabolises like a carbohydrate, adds small amount of calories"
+    }
+  },
+  "rapeseed_oil": {
+    "name": "Rapeseed oil (canola)",
+    "aliases": [
+      "rapeseed oil",
+      "canola oil",
+      "rape seed oil",
+      "refined rapeseed oil",
+      "cold pressed rapeseed oil"
+    ],
+    "safety": "good",
+    "color": "#C0DD97",
+    "spoon_label": "rapeseed oil (healthy fat)",
+    "note": "One of the healthiest cooking oils. Low in saturated fat, high in omega-3. Good choice.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "good",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {}
+  },
+  "sodium_hydrogen_carbonate": {
+    "name": "Raising agent — sodium hydrogen carbonate (500)",
+    "aliases": [
+      "sodium hydrogen carbonate",
+      "sodium bicarbonate",
+      "baking soda",
+      "500",
+      "500(i)",
+      "500(ii)",
+      "raising agent 500",
+      "bicarbonate of soda",
+      "nahco3"
+    ],
+    "safety": "okay",
+    "color": "#D3D1C7",
+    "spoon_label": "baking soda / sodium bicarbonate",
+    "note": "Common leavening agent. Breaks down during baking. Safe in food amounts.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "okay",
+      "pregnant": "okay",
+      "hypertension": "caution",
+      "elderly": "okay",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "hypertension": "Sodium bicarbonate — adds to daily sodium intake"
+    }
+  },
+  "egg": {
+    "name": "Egg / egg solids",
+    "aliases": [
+      "egg",
+      "eggs",
+      "whole egg",
+      "dried egg",
+      "dried whole egg",
+      "egg powder",
+      "egg yolk",
+      "egg white",
+      "albumin",
+      "egg solids",
+      "liquid egg",
+      "pasteurised egg"
+    ],
+    "safety": "good",
+    "color": "#FAC775",
+    "spoon_label": "egg (protein + nutrients)",
+    "note": "Excellent source of protein, vitamins D and B12. Allergen for some people.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "caution",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {
+      "infants": "Egg — top allergen, introduce carefully after 6 months"
+    }
+  },
+  "diglycerides": {
+    "name": "Diglycerides of fatty acids (471)",
+    "aliases": [
+      "diglycerides",
+      "diglycerides of fatty acids",
+      "mono and diglycerides",
+      "monoglycerides",
+      "471",
+      "e471",
+      "emulsifier 471",
+      "mono- and diglycerides of fatty acids"
+    ],
+    "safety": "caution",
+    "color": "#AFA9EC",
+    "spoon_label": "emulsifier — diglycerides (471)",
+    "note": "Emulsifier derived from fats (often palm or animal). Keeps texture smooth. Source often undisclosed.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "caution",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "infants": "Diglycerides — source unclear, avoid in infant foods"
+    }
+  },
+  "olive_oil": {
+    "name": "Olive oil",
+    "aliases": [
+      "olive oil",
+      "extra virgin olive oil",
+      "virgin olive oil",
+      "refined olive oil",
+      "light olive oil"
+    ],
+    "safety": "good",
+    "color": "#97C459",
+    "spoon_label": "olive oil (heart healthy)",
+    "note": "One of the healthiest oils. Rich in monounsaturated fats and antioxidants.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "good",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {}
+  },
+  "starch": {
+    "name": "Starch / modified starch",
+    "aliases": [
+      "starch",
+      "modified starch",
+      "food starch",
+      "corn starch",
+      "cornstarch",
+      "potato starch",
+      "wheat starch",
+      "rice starch",
+      "modified food starch",
+      "hydroxypropyl starch",
+      "acetylated starch",
+      "1422",
+      "1412",
+      "1414",
+      "1442"
+    ],
+    "safety": "caution",
+    "color": "#FAC775",
+    "spoon_label": "modified starch (filler)",
+    "note": "Used as thickener or filler. High glycemic index. Often highly processed.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "caution",
+      "infants": "okay",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "diabetics": "Modified starch — raises blood sugar, similar to maltodextrin"
+    }
+  },
+  "vinegar": {
+    "name": "Vinegar / acetic acid",
+    "aliases": [
+      "vinegar",
+      "white vinegar",
+      "apple cider vinegar",
+      "malt vinegar",
+      "acetic acid",
+      "260",
+      "e260",
+      "spirit vinegar"
+    ],
+    "safety": "good",
+    "color": "#C0DD97",
+    "spoon_label": "vinegar (natural preservative)",
+    "note": "Natural preservative. Safe. May even help with blood sugar control.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "okay",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {}
+  },
+  "yeast": {
+    "name": "Yeast / yeast extract",
+    "aliases": [
+      "yeast",
+      "dried yeast",
+      "yeast extract",
+      "autolyzed yeast",
+      "inactive yeast",
+      "baker's yeast",
+      "brewer's yeast"
+    ],
+    "safety": "good",
+    "color": "#BA7517",
+    "spoon_label": "yeast (natural)",
+    "note": "Natural leavening or flavour agent. Rich in B vitamins. Safe for most people.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "okay",
+      "pregnant": "good",
+      "hypertension": "okay",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {}
+  },
+  "skimmed_milk": {
+    "name": "Skimmed milk",
+    "aliases": [
+      "skimmed milk",
+      "skim milk",
+      "non-fat milk",
+      "fat free milk",
+      "skimmed milk powder",
+      "low fat milk",
+      "semi skimmed milk"
+    ],
+    "safety": "good",
+    "color": "#B5D4F4",
+    "spoon_label": "skimmed milk (low fat dairy)",
+    "note": "Low-fat dairy. Good protein and calcium source. Less saturated fat than whole milk.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "caution",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {
+      "infants": "Cow's milk — not suitable as main drink before 1 year"
+    }
+  },
+  "cream": {
+    "name": "Cream",
+    "aliases": [
+      "cream",
+      "fresh cream",
+      "double cream",
+      "single cream",
+      "heavy cream",
+      "whipping cream",
+      "dairy cream"
+    ],
+    "safety": "caution",
+    "color": "#FAC775",
+    "spoon_label": "cream (high fat dairy)",
+    "note": "High in saturated fat. Use in moderation.",
+    "profiles": {
+      "adults": "caution",
+      "diabetics": "caution",
+      "infants": "okay",
+      "pregnant": "okay",
+      "hypertension": "caution",
+      "elderly": "caution",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "hypertension": "Cream — high saturated fat raises LDL cholesterol"
+    }
+  },
+  "cheese": {
+    "name": "Cheese",
+    "aliases": [
+      "cheese",
+      "cheddar",
+      "processed cheese",
+      "cheese powder",
+      "parmesan",
+      "mozzarella",
+      "paneer",
+      "cottage cheese"
+    ],
+    "safety": "caution",
+    "color": "#FAC775",
+    "spoon_label": "cheese",
+    "note": "Good protein and calcium source but high in saturated fat and sodium.",
+    "profiles": {
+      "adults": "caution",
+      "diabetics": "okay",
+      "infants": "caution",
+      "pregnant": "okay",
+      "hypertension": "caution",
+      "elderly": "okay",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "hypertension": "Cheese — high sodium content",
+      "infants": "Cheese — high salt, not for infants under 1 year"
+    }
+  },
+  "tomato": {
+    "name": "Tomato / tomato paste",
+    "aliases": [
+      "tomato",
+      "tomato paste",
+      "tomato puree",
+      "tomato powder",
+      "tomato concentrate",
+      "sun dried tomato",
+      "tomato ketchup"
+    ],
+    "safety": "good",
+    "color": "#E24B4A",
+    "spoon_label": "tomato (lycopene + vitamins)",
+    "note": "Rich in lycopene and vitamin C. Natural and beneficial.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "okay",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {}
+  },
+  "onion": {
+    "name": "Onion / onion powder",
+    "aliases": [
+      "onion",
+      "onion powder",
+      "onion flakes",
+      "dehydrated onion",
+      "dried onion",
+      "spring onion"
+    ],
+    "safety": "good",
+    "color": "#F0997B",
+    "spoon_label": "onion (natural flavour)",
+    "note": "Natural ingredient. Anti-inflammatory. Safe for all.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "caution",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {
+      "infants": "Onion — strong flavour, may cause gas in infants"
+    }
+  },
+  "garlic": {
+    "name": "Garlic / garlic powder",
+    "aliases": [
+      "garlic",
+      "garlic powder",
+      "garlic flakes",
+      "dehydrated garlic",
+      "dried garlic",
+      "garlic paste",
+      "garlic extract"
+    ],
+    "safety": "good",
+    "color": "#D3D1C7",
+    "spoon_label": "garlic (natural, antibacterial)",
+    "note": "Natural antibacterial properties. Beneficial for heart health.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "caution",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {
+      "infants": "Garlic — strong flavour, introduce carefully"
+    }
+  },
+  "sodium_citrate": {
+    "name": "Acidity regulator — sodium citrate (331)",
+    "aliases": [
+      "331",
+      "sodium citrate",
+      "e331",
+      "trisodium citrate",
+      "acidity regulator 331"
+    ],
+    "safety": "okay",
+    "color": "#9FE1CB",
+    "spoon_label": "sodium citrate (331)",
+    "note": "Salt of citric acid. Safe. Used to control acidity in juices and dairy.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "okay",
+      "pregnant": "okay",
+      "hypertension": "caution",
+      "elderly": "okay",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "hypertension": "Sodium citrate — adds sodium, watch total daily intake"
+    }
+  },
+  "calcium_carbonate": {
+    "name": "Calcium carbonate (170)",
+    "aliases": [
+      "170",
+      "calcium carbonate",
+      "e170",
+      "chalk",
+      "acidity regulator 170",
+      "anticaking 170"
+    ],
+    "safety": "good",
+    "color": "#D3D1C7",
+    "spoon_label": "calcium carbonate (170)",
+    "note": "Natural calcium source. Used as anticaking agent or acidity regulator. Safe.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "good",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {}
+  },
+  "iron": {
+    "name": "Iron (fortification)",
+    "aliases": [
+      "iron",
+      "ferrous sulphate",
+      "ferric orthophosphate",
+      "reduced iron",
+      "elemental iron",
+      "iron fortified"
+    ],
+    "safety": "good",
+    "color": "#BA7517",
+    "spoon_label": "iron (fortification nutrient)",
+    "note": "Added iron for nutritional fortification. Beneficial especially for women and children.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "good",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {}
+  },
+  "zinc": {
+    "name": "Zinc (fortification)",
+    "aliases": [
+      "zinc",
+      "zinc sulphate",
+      "zinc oxide",
+      "zinc gluconate"
+    ],
+    "safety": "good",
+    "color": "#D3D1C7",
+    "spoon_label": "zinc (fortification nutrient)",
+    "note": "Added zinc for immune function. Safe at fortification levels.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "good",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {}
+  },
+  "niacin": {
+    "name": "Niacin / vitamin B3",
+    "aliases": [
+      "niacin",
+      "nicotinic acid",
+      "niacinamide",
+      "vitamin b3",
+      "vitamin b-3"
+    ],
+    "safety": "good",
+    "color": "#C0DD97",
+    "spoon_label": "niacin (vitamin B3)",
+    "note": "B vitamin. Essential for energy metabolism. Safe at fortification levels.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "good",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {}
+  },
+  "riboflavin": {
+    "name": "Riboflavin / vitamin B2 (101)",
+    "aliases": [
+      "riboflavin",
+      "vitamin b2",
+      "vitamin b-2",
+      "101",
+      "e101",
+      "lactoflavin"
+    ],
+    "safety": "good",
+    "color": "#FAC775",
+    "spoon_label": "riboflavin / vitamin B2 (101)",
+    "note": "B vitamin. Also used as a natural yellow food colour. Safe.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "good",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {}
+  },
+  "folic_acid": {
+    "name": "Folic acid / vitamin B9",
+    "aliases": [
+      "folic acid",
+      "folate",
+      "vitamin b9",
+      "vitamin b-9"
+    ],
+    "safety": "good",
+    "color": "#C0DD97",
+    "spoon_label": "folic acid (vitamin B9)",
+    "note": "Essential B vitamin. Especially important during pregnancy for neural tube development.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "good",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {}
+  },
+  "vitamin_d": {
+    "name": "Vitamin D",
+    "aliases": [
+      "vitamin d",
+      "vitamin d3",
+      "cholecalciferol",
+      "vitamin d2",
+      "ergocalciferol"
+    ],
+    "safety": "good",
+    "color": "#FAC775",
+    "spoon_label": "vitamin D",
+    "note": "Essential fat-soluble vitamin for bone health and immunity.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "good",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {}
+  },
+  "pectin": {
+    "name": "Pectin (440)",
+    "aliases": [
+      "pectin",
+      "440",
+      "e440",
+      "apple pectin",
+      "citrus pectin",
+      "amidated pectin"
+    ],
+    "safety": "good",
+    "color": "#C0DD97",
+    "spoon_label": "pectin (natural thickener)",
+    "note": "Natural fibre from fruit peels. Used as gelling agent in jams and jelly. Beneficial for gut health.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "good",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {}
+  },
+  "agar": {
+    "name": "Agar / agar-agar (406)",
+    "aliases": [
+      "agar",
+      "agar agar",
+      "406",
+      "e406",
+      "chinese isinglass"
+    ],
+    "safety": "good",
+    "color": "#9FE1CB",
+    "spoon_label": "agar (plant-based gelling)",
+    "note": "Seaweed-derived gelling agent. Vegan alternative to gelatin. Safe.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "okay",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {}
+  },
+  "gelatin": {
+    "name": "Gelatin",
+    "aliases": [
+      "gelatin",
+      "gelatine",
+      "beef gelatin",
+      "pork gelatin",
+      "fish gelatin",
+      "collagen"
+    ],
+    "safety": "okay",
+    "color": "#F5C4B3",
+    "spoon_label": "gelatin (animal-derived)",
+    "note": "Derived from animal bones/skin. Not vegan or vegetarian. Halal/Kosher status depends on source.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "caution",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "infants": "Gelatin — source unclear, check if suitable"
+    }
+  },
+  "dextrose": {
+    "name": "Dextrose / glucose",
+    "aliases": [
+      "dextrose",
+      "glucose",
+      "glucose powder",
+      "anhydrous dextrose",
+      "glucose monohydrate"
+    ],
+    "safety": "caution",
+    "color": "#F0997B",
+    "spoon_label": "dextrose (fast sugar)",
+    "note": "Pure glucose — the fastest-absorbing sugar. Spikes blood glucose immediately.",
+    "profiles": {
+      "adults": "caution",
+      "diabetics": "avoid",
+      "infants": "avoid",
+      "pregnant": "caution",
+      "hypertension": "okay",
+      "elderly": "caution",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "diabetics": "Dextrose — pure glucose, spikes blood sugar faster than sugar",
+      "infants": "Dextrose — added sugars not suitable under 2 years"
+    }
+  },
+  "fructose": {
+    "name": "Fructose (fruit sugar)",
+    "aliases": [
+      "fructose",
+      "crystalline fructose",
+      "levulose",
+      "fruit sugar"
+    ],
+    "safety": "caution",
+    "color": "#F0997B",
+    "spoon_label": "fructose (fruit sugar)",
+    "note": "Processed entirely by the liver. Excess linked to fatty liver and high triglycerides.",
+    "profiles": {
+      "adults": "caution",
+      "diabetics": "caution",
+      "infants": "avoid",
+      "pregnant": "caution",
+      "hypertension": "caution",
+      "elderly": "caution",
+      "fitness": "caution"
+    },
+    "profile_notes": {
+      "diabetics": "Fructose — processed in liver, linked to fatty liver in excess",
+      "infants": "Fructose — added sugars not suitable under 2 years"
+    }
+  },
+  "sorbitol": {
+    "name": "Sorbitol (420)",
+    "aliases": [
+      "sorbitol",
+      "420",
+      "e420",
+      "glucitol",
+      "sorbitol syrup"
+    ],
+    "safety": "caution",
+    "color": "#CECBF6",
+    "spoon_label": "sorbitol sweetener (420)",
+    "note": "Sugar alcohol. Causes laxative effect in large quantities. Lower GI than sugar.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "avoid",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "caution",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "infants": "Sorbitol — not suitable for infants",
+      "elderly": "Sorbitol — laxative effect at higher doses"
+    }
+  },
+  "sunflower_lecithin": {
+    "name": "Sunflower lecithin",
+    "aliases": [
+      "sunflower lecithin",
+      "sunflower emulsifier"
+    ],
+    "safety": "good",
+    "color": "#FAC775",
+    "spoon_label": "sunflower lecithin (natural emulsifier)",
+    "note": "Plant-based emulsifier from sunflower. Good alternative to soy lecithin. Safe.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "okay",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {}
+  },
+  "potassium_chloride": {
+    "name": "Potassium chloride (508)",
+    "aliases": [
+      "508",
+      "potassium chloride",
+      "e508",
+      "salt substitute"
+    ],
+    "safety": "okay",
+    "color": "#D3D1C7",
+    "spoon_label": "potassium chloride (508)",
+    "note": "Used as salt substitute or firming agent. Generally safe. Excess can affect kidneys.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "avoid",
+      "pregnant": "okay",
+      "hypertension": "good",
+      "elderly": "caution",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "infants": "Potassium chloride — not suitable for infant kidneys",
+      "elderly": "Potassium chloride — excess can stress kidneys"
+    }
+  },
+  "lactic_acid": {
+    "name": "Lactic acid (270)",
+    "aliases": [
+      "270",
+      "lactic acid",
+      "e270",
+      "acidity regulator 270"
+    ],
+    "safety": "good",
+    "color": "#C0DD97",
+    "spoon_label": "lactic acid (270)",
+    "note": "Natural acid found in fermented foods. Safe. Produced by gut bacteria naturally.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "good",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {}
+  },
+  "malic_acid": {
+    "name": "Malic acid (296)",
+    "aliases": [
+      "296",
+      "malic acid",
+      "e296",
+      "acidity regulator 296"
+    ],
+    "safety": "okay",
+    "color": "#C0DD97",
+    "spoon_label": "malic acid (296)",
+    "note": "Natural acid found in apples. Safe as food additive.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "okay",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "okay"
+    },
+    "profile_notes": {}
+  },
+  "annatto": {
+    "name": "Annatto / bixin (160b)",
+    "aliases": [
+      "160b",
+      "annatto",
+      "bixin",
+      "norbixin",
+      "e160b",
+      "annatto extract"
+    ],
+    "safety": "caution",
+    "color": "#EF9F27",
+    "spoon_label": "annatto colour (160b)",
+    "note": "Natural orange-yellow dye from annatto seeds. Can cause allergic reactions in some people.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "caution",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "infants": "Annatto — can cause allergic reactions, avoid in infants"
+    }
+  },
+  "curcumin": {
+    "name": "Turmeric / curcumin (100)",
+    "aliases": [
+      "100",
+      "curcumin",
+      "turmeric",
+      "e100",
+      "turmeric extract",
+      "curcuma"
+    ],
+    "safety": "good",
+    "color": "#EF9F27",
+    "spoon_label": "turmeric / curcumin (natural colour)",
+    "note": "Natural yellow colour from turmeric. Anti-inflammatory. Safe and beneficial.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "good",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {}
+  },
+  "beta_carotene": {
+    "name": "Beta-carotene / vitamin A (160a)",
+    "aliases": [
+      "160a",
+      "beta carotene",
+      "beta-carotene",
+      "e160a",
+      "carotene",
+      "vitamin a",
+      "retinol"
+    ],
+    "safety": "good",
+    "color": "#EF9F27",
+    "spoon_label": "beta-carotene / vitamin A (160a)",
+    "note": "Natural orange pigment and precursor to vitamin A. Safe and nutritious.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "good",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {}
+  },
+  "silicon_dioxide": {
+    "name": "Anticaking agent — silicon dioxide (551)",
+    "aliases": [
+      "551",
+      "silicon dioxide",
+      "silica",
+      "e551",
+      "anticaking 551",
+      "silicone dioxide"
+    ],
+    "safety": "okay",
+    "color": "#D3D1C7",
+    "spoon_label": "silicon dioxide (anticaking)",
+    "note": "Prevents clumping in powdered foods. Long-term effects of inhaled silica are dangerous but food-grade ingestion is generally considered safe.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "caution",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "infants": "Anticaking agents — avoid in infant foods"
+    }
+  },
+  "magnesium_stearate": {
+    "name": "Magnesium stearate (572)",
+    "aliases": [
+      "572",
+      "magnesium stearate",
+      "e572",
+      "magnesium salts of fatty acids"
+    ],
+    "safety": "okay",
+    "color": "#D3D1C7",
+    "spoon_label": "magnesium stearate (572)",
+    "note": "Anticaking or release agent. Generally safe in food amounts.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "caution",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "infants": "Anticaking agents — avoid in infant foods"
+    }
+  },
+  "natural_flavour": {
+    "name": "Natural flavouring",
+    "aliases": [
+      "natural flavour",
+      "natural flavor",
+      "natural flavouring",
+      "natural flavoring",
+      "natural identical flavour",
+      "nature identical flavour",
+      "natural extracts",
+      "plant extracts",
+      "herb extract"
+    ],
+    "safety": "okay",
+    "color": "#C0DD97",
+    "spoon_label": "natural flavouring",
+    "note": "Derived from natural sources but exact composition often undisclosed. Better than artificial.",
+    "profiles": {
+      "adults": "okay",
+      "diabetics": "okay",
+      "infants": "caution",
+      "pregnant": "okay",
+      "hypertension": "okay",
+      "elderly": "okay",
+      "fitness": "okay"
+    },
+    "profile_notes": {
+      "infants": "Natural flavouring — exact source unclear, introduce carefully"
+    }
+  },
+  "iodine": {
+    "name": "Iodine (fortification)",
+    "aliases": [
+      "iodine",
+      "potassium iodide",
+      "potassium iodate",
+      "iodised"
+    ],
+    "safety": "good",
+    "color": "#C0DD97",
+    "spoon_label": "iodine (fortification)",
+    "note": "Essential mineral for thyroid function. Safe at fortification levels.",
+    "profiles": {
+      "adults": "good",
+      "diabetics": "good",
+      "infants": "good",
+      "pregnant": "good",
+      "hypertension": "good",
+      "elderly": "good",
+      "fitness": "good"
+    },
+    "profile_notes": {}
+  }
+}
